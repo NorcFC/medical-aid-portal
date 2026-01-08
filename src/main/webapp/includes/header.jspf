@@ -1,0 +1,32 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page isELIgnored="false" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>${pageTitle != null ? pageTitle : 'MedAid Portal'}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/assets/css/styles.css?v=1" />
+</head>
+<body>
+<div class="app-bg"></div>
+
+<header class="topbar">
+    <div class="topbar__inner container">
+        <div class="brand">
+            <span class="brand__title">MedAid Portal</span>
+            <span class="brand__subtitle">Ministry of Health • Botswana (demo)</span>
+        </div>
+
+        <nav class="nav">
+            <a class="nav__link" href="<%=request.getContextPath()%>/index.jsp">Home</a>
+            <a class="nav__link" href="<%=request.getContextPath()%>/member-login.jsp">Member</a>
+            <a class="nav__link" href="<%=request.getContextPath()%>/provider-login.jsp">Provider</a>
+            <a class="nav__link" href="<%=request.getContextPath()%>/benefits.jsp">Benefits</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container page">

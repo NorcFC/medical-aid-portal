@@ -1,0 +1,11 @@
+</main>
+
+<footer class="footer">
+    <div class="container footer__inner">
+        <span>© <%= java.time.Year.now() %> MedAid Portal • Demo only</span>
+        <span class="dot">•</span>
+        <span>Not connected to live systems</span>
+    </div>
+</footer>
+</body>
+</html>
